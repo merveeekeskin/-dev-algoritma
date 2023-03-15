@@ -1,12 +1,12 @@
 #include <stdio.h>
-
+// Öğrenci yapıları tanımlama
 struct Ogrenci {
    char ad[20];
    char soyad[20];
    int yas;
    char adres[50];
 };
-
+// öğrenci bilgileri
 int main() {
    struct Ogrenci ogrenciler[5] = {
       {"betul", "Yilmaz", 21, "istanbul"},
@@ -15,7 +15,7 @@ int main() {
       {"zehra", "Demir", 22, "Bursa"},
       {"Ali", "Gunes", 20, "Antalya"}
    };
-
+// öğrenci bilgileri ekranda  gösterilir
    for (int i = 0; i < 5; i++) {
       printf("Ogrenci %d:\n", i+1);
       printf("Ad: %s\n", ogrenciler[i].ad);
